@@ -38,12 +38,22 @@ vagrantfile-local:
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
                     - '--parser future'
         synced_folder:
+            c7Uyi6THIQUdsaf:
+                owner: vagrant
+                group: vagrant
+                sync_owner: vagrant
+                sync_group: vagrant
+                source: ./dat
+                target: /home/vagrant/dat
+                sync_type: nfs
+                rsync:
+                    auto: 'false'
             LN9KBZxpcVPK:
                 owner: www-data
                 group: www-data
                 source: ./nodejs
                 target: /var/www
-                sync_type: default
+                sync_type: nfs
                 rsync:
                     args:
                         - '--verbose'
@@ -51,14 +61,6 @@ vagrantfile-local:
                         - '-z'
                     exclude:
                         - .vagrant/
-                    auto: 'false'
-            c7Uyi6THIQUn:
-                owner: www-data
-                group: www-data
-                source: ./home
-                target: /home/vagrant/dat/
-                sync_type: default
-                rsync:
                     auto: 'false'
         usable_port_range:
             start: 10200
