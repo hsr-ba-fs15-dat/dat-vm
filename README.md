@@ -30,7 +30,7 @@ Main Repository
     
     Host          | Guest          | Usage | Comment
     --- |---:|---|---
-    22 | 9363 | `$ vagrant ssh`  | 
+    9363 | 22 | `$ vagrant ssh`  | 
     3000 | 3000|http://localhost:3000 | for node.js
     5000 | 5000 | http://localhost:5000 | for foreman
     6461 | 6461|http://localhost:6461 | for dat web
