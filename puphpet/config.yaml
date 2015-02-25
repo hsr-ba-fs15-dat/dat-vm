@@ -10,15 +10,15 @@ vagrantfile-local:
         network:
             private_network: 192.168.56.101
             forwarded_port:
-                BLRtixeaPSul:
+                LNm4krdNm8xp:
                     host: '9363'
                     guest: '22'
-                BLRtixeaPSbe:
+                zDQvzK6a46hi:
                     host: '3000'
                     guest: '3000'
-                BLRtixeaPS3213:
-                    host: '6461'
-                    guest: '6461'
+                W1DhPCsGR5ru:
+                    host: '5000'
+                    guest: '5000'
         post_up_message: ''
         provider:
             virtualbox:
@@ -38,21 +38,19 @@ vagrantfile-local:
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
                     - '--parser future'
         synced_folder:
-            c7Uyi6THIQUdsaf:
+            HsSk9PfoII9v:
                 owner: vagrant
                 group: vagrant
-                sync_owner: vagrant
-                sync_group: vagrant
-                source: ./dat
-                target: /home/vagrant/dat
+                source: ./
+                target: /source
                 sync_type: nfs
                 rsync:
                     auto: 'false'
-            LN9KBZxpcVPK:
+            kzA1fiasTKv9:
                 owner: www-data
                 group: www-data
                 source: ./webapp
-                target: /var/www
+                target: /home/vagrant/webapp
                 sync_type: nfs
                 rsync:
                     args:
@@ -81,6 +79,7 @@ server:
     install: '1'
     packages:
         - vim
+        - python-pip
 users_groups:
     install: '1'
     groups: {  }
@@ -103,7 +102,7 @@ apache:
     modules:
         - rewrite
     vhosts:
-        xbztqgsdrxbc:
+        q8otm9wgwszs:
             servername: awesome.dev
             serveraliases:
                 - www.awesome.dev
@@ -112,7 +111,7 @@ apache:
             setenv:
                 - 'APP_ENV dev'
             directories:
-                fazkfklk0bip:
+                xf0d5ecgnsjk:
                     provider: directory
                     path: /var/www/awesome
                     options:
@@ -138,6 +137,8 @@ nginx:
         default_vhost: 1
         proxy_buffer_size: 128k
         proxy_buffers: '4 256k'
+    upstreams: {  }
+    vhosts: {  }
 php:
     install: '0'
     version: '56'
@@ -189,24 +190,29 @@ drush:
 ruby:
     install: '1'
     versions:
-        fcNXN6ufHHwX:
+        K2VdbLICbfUs:
             version: ''
 nodejs:
-    install: '0'
-    npm_packages: {  }
+    install: '1'
+    npm_packages:
+        - npm@latest
+        - bower
+        - grunt-cli
+        - yo
+        - generator-angular
 python:
     install: '1'
-    packages: {  }
-    versions:
-        j3Whsjdx84AE:
-            version: ''
+    packages:
+        - virtualenv
+        - virtualenv-wrapper
+    versions: {  }
 mysql:
     install: '1'
     override_options: {  }
     root_password: '123'
     adminer: 0
     databases:
-        CEHhfbpff7iq:
+        cpTjLt3UrtQb:
             grant:
                 - ALL
             name: dbname
@@ -215,7 +221,7 @@ mysql:
             password: '123'
             sql_file: ''
 postgresql:
-    install: '0'
+    install: '1'
     settings:
         root_password: '123'
         user_group: postgres
@@ -235,7 +241,7 @@ sqlite:
     adminer: 0
     databases: {  }
 mongodb:
-    install: '1'
+    install: '0'
     settings:
         auth: 1
         port: '27017'
