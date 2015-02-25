@@ -210,7 +210,7 @@ python:
     packages: { }
     versions: {  }
 mysql:
-    install: '1'
+    install: '0'
     override_options: {  }
     root_password: '123'
     adminer: 0
