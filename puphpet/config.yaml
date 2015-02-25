@@ -202,9 +202,7 @@ nodejs:
         - generator-angular
 python:
     install: '1'
-    packages:
-        - virtualenv
-        - virtualenv-wrapper
+    packages: { }
     versions: {  }
 mysql:
     install: '1'
