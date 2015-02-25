@@ -84,6 +84,7 @@ server:
     packages:
         - vim
         - python-pip
+        - python-virtualenv
 users_groups:
     install: '1'
     groups: {  }
