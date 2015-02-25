@@ -51,7 +51,7 @@ vagrantfile-local:
             LN9KBZxpcVPK:
                 owner: www-data
                 group: www-data
-                source: ./nodejs
+                source: ./webapp
                 target: /var/www
                 sync_type: nfs
                 rsync:
