@@ -47,8 +47,8 @@ vagrantfile-local:
                 rsync:
                     auto: 'false'
             kzA1fiasTKv9:
-                owner: www-data
-                group: www-data
+                owner: vagrant
+                group: vagrant
                 source: ./webapp
                 target: /home/vagrant/webapp
                 sync_type: nfs
