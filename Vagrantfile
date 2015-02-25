@@ -284,6 +284,9 @@ Vagrant.configure('2') do |config|
   if !data['vagrant']['host'].nil?
     config.vagrant.host = data['vagrant']['host'].gsub(':', '').intern
   end
+  config.push.define "heroku" do |push|
+    push.app = "warm-reef-7734"
+  end
 end
 
 

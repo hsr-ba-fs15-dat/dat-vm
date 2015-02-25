@@ -39,6 +39,8 @@ vagrantfile-local:
                     - '--parser future'
         synced_folder:
             HsSk9PfoII9v:
+                sync_owner: vagrant
+                sync_group: vagrant
                 owner: vagrant
                 group: vagrant
                 source: ./
@@ -47,6 +49,8 @@ vagrantfile-local:
                 rsync:
                     auto: 'false'
             kzA1fiasTKv9:
+                sync_owner: vagrant
+                sync_group: vagrant
                 owner: vagrant
                 group: vagrant
                 source: ./webapp
