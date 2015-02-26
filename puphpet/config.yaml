@@ -184,7 +184,7 @@ ruby:
 nodejs:
     install: '1'
     npm_packages:
-        - npm@latest
+        - npm@present
         - bower
         - grunt-cli
         - yo
