@@ -116,4 +116,5 @@ fi
 
 # Convenience
 cd /vagrant/webapp/backend
+source env/bin/activate
 
