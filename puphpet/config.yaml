@@ -68,7 +68,6 @@ server:
     packages:
         - vim
         - python-pip
-        - python-virtualenv
 users_groups:
     install: '1'
     groups: {  }
@@ -191,7 +190,9 @@ nodejs:
         - generator-angular
 python:
     install: '1'
-    packages: { }
+    packages:
+        - virtualenv
+        - pybuilder
     versions: {  }
 mysql:
     install: '0'
