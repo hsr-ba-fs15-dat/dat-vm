@@ -1,4 +1,0 @@
-[submodule "dat/webapp"]
-	path = webapp
-	url = https://github.com/hsr-ba-fs15-dat/webapp.git
-	branch = master

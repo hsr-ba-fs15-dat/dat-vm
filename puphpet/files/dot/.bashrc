@@ -115,6 +115,5 @@ fi
 
 
 # Convenience
-cd /vagrant/webapp/backend
-source env/bin/activate
-
+cd /vagrant
+workon opendatahub_env

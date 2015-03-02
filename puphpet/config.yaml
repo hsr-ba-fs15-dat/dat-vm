@@ -67,8 +67,9 @@ server:
     install: '1'
     packages:
         - vim
+        - postgresql-server-dev-9.3
         - python-pip
-        - python-psycopg2
+        - python-dev
 users_groups:
     install: '1'
     groups: {  }
@@ -193,6 +194,7 @@ python:
     install: '1'
     packages:
         - virtualenv
+        - virtualenvwrapper
         - pybuilder
     versions: {  }
 mysql:
