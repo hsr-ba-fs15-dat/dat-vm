@@ -68,6 +68,7 @@ server:
     packages:
         - vim
         - python-pip
+        - python-psycopg2
 users_groups:
     install: '1'
     groups: {  }
@@ -215,8 +216,14 @@ postgresql:
         user_group: postgres
         encoding: UTF8
         version: '9.3'
-    databases: {  }
-    adminer: '1'
+    databases:
+        yDAP2Y4f0cgc:
+            grant: ALL
+            name: opendatahub
+            user: opendatahub
+            password: opendatahub
+            sql_file: ''
+    adminer: 0
 mariadb:
     install: '0'
     override_options: {  }
