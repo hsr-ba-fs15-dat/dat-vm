@@ -194,8 +194,6 @@ python:
     install: '1'
     packages:
         - virtualenv
-        - virtualenvwrapper
-        - pybuilder
     versions: {  }
 mysql:
     install: '0'

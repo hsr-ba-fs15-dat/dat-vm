@@ -115,5 +115,10 @@ fi
 
 
 # Convenience
-cd /vagrant
-workon opendatahub_env
+if [ -d /vagrant/opendatahub/env ]; then
+    source /vagrant/opendatahub/env/bin/activate
+fi;
+
+if [ -d /vagrant/opendatahub ]; then
+    cd /vagrant/opendatahub
+fi;
