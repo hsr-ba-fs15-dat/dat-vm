@@ -19,6 +19,9 @@ vagrantfile-local:
                 W1DhPCsGR5ru:
                     host: '5000'
                     guest: '5000'
+               W1dsaasdfDhPCsGR5ru:
+                    host: '5432'
+                    guest: '5432'
         post_up_message: ''
         provider:
             virtualbox:
