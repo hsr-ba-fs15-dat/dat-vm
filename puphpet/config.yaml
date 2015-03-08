@@ -73,6 +73,7 @@ server:
         - postgresql-server-dev-9.3
         - python-pip
         - python-dev
+        - phantomjs
 users_groups:
     install: '1'
     groups: {  }
