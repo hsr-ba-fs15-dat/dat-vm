@@ -115,8 +115,8 @@ fi
 
 
 # Convenience
-if [ -d /vagrant/opendatahub/env ]; then
-    source /vagrant/opendatahub/env/bin/activate
+if [ -d /home/vagrant/env ]; then
+    source /home/vagrant/env/bin/activate
 fi;
 
 if [ -d /vagrant/opendatahub ]; then
