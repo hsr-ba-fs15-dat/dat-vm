@@ -8,5 +8,5 @@ sudo wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 # Required for SASS
 sudo `which gem` install compass
 
-export PGPASSWORD=123
-psql -U postgres -h localhost -c 'ALTER USER opendatahub CREATEDB;'
+# Lets use easily drop/re-create database during development
+sudo su - postgres -c 'psql -c "ALTER DATABASE opendatahub OWNER TO opendatahub;" && psql -c "ALTER USER opendatahub CREATEDB;"'
