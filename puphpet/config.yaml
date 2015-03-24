@@ -19,6 +19,12 @@ vagrantfile-local:
                 W1DhPCsGR5ru:
                     host: '5000'
                     guest: '5000'
+                IP1DhP8aCsGR5ru:
+                    host: '8888'
+                    guest: '8888'
+                KarmaPCsGRi5ru:
+                    host: '8080'
+                    guest: '8080'
                 W1dsaasdfDhPCsGR5ru:
                     host: '5432'
                     guest: '5432'
@@ -74,6 +80,12 @@ server:
         - python-pip
         - python-dev
         - phantomjs
+        - gdal-bin
+        - libgdal-dev
+        - libgdal1h
+        - libgdal1-dev
+        - libfreetype6
+        - libfreetype6-dev
 users_groups:
     install: '1'
     groups: {  }
