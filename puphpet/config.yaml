@@ -86,6 +86,9 @@ server:
         - libgdal1-dev
         - libfreetype6
         - libfreetype6-dev
+        - libxml2-dev
+        - libxslt-dev
+        - python-dev
 users_groups:
     install: '1'
     groups: {  }
