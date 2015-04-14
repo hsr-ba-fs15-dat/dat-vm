@@ -121,4 +121,5 @@ fi;
 
 if [ -d /vagrant/opendatahub ]; then
     cd /vagrant/opendatahub
+    export PATH=/vagrant/opendatahub/interlis:$PATH
 fi;

@@ -89,6 +89,7 @@ server:
         - libxml2-dev
         - libxslt-dev
         - python-dev
+        - openjdk-7-jre
 users_groups:
     install: '1'
     groups: {  }
